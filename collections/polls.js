@@ -3,7 +3,7 @@ Polls = new Mongo.Collection('polls');
 if (Meteor.isServer) {
   // Publish the polls to the client
   Meteor.publish('recentPolls', function() {
-    return Polls.find({}, {sort: {question: 1}, limit: 3});
+    return Polls.find({}, {sort: {created_at: -1}, limit: 3});
   });
 }
 
