@@ -7,10 +7,11 @@
   font-size:18px;
 }
 .answer-group {
-  margin-bottom:20px;
-  margin-left:100px;
   background:#EEE;
   padding:20px;
+}
+.answer {
+  padding-bottom: 20px;
 }
 .question-group label {
   font-size:18px;
