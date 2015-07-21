@@ -11,5 +11,9 @@ Meteor.methods({
       { _id: pollID },
       { $inc: action }
     ); 
+  },
+
+  addPoll: function(newPoll) {
+    Polls.insert(newPoll);
   }
 });
