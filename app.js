@@ -13,7 +13,12 @@ Meteor.methods({
     ); 
   },
 
-  addPoll: function(newPoll) {
+  addPoll: function(question, choices) {
+    var newPoll = {
+      question: question,
+      choices: choices,
+      created_at: new Date()
+    }
     Polls.insert(newPoll);
   }
 });
