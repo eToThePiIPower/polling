@@ -6,6 +6,7 @@ Meteor.startup(function() {
     var samplePolls = [
       {
         question: 'What is the best web framework?',
+        created_at: new Date(),
         choices: [
           { text: 'Meteor, naturally', votes: 0 },
           { text: 'Ruby on Rails, of course', votes: 0 },
@@ -14,6 +15,7 @@ Meteor.startup(function() {
         ]
       },{
         question: 'Which is the greatest web browser?',
+        created_at: new Date(),
         choices: [
           { text: 'Chromium/Chrome', votes: 0 },
           { text: 'Aurora/Firefox', votes: 0 },

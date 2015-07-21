@@ -1,7 +1,7 @@
 // Add polls helper to template.body
 Template.body.helpers({
   polls: function() {
-    return Polls.find();
+    return Polls.find({}, {sort: {created_at: -1}});
   }
 });
 
