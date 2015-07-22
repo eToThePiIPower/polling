@@ -1,5 +1,5 @@
 <template name="poll">
-<div class="poll well well-lg" data-id="{{ _id }}">
+<div class="poll col-md-3 col-sm-12 well well-lg" data-id="{{ _id }}">
   <h3>{{ question }}</h3>
 
   {{#each indexedArray choices }}
@@ -8,6 +8,5 @@
       <span class="text">{{ text }}</span>
     </a>
   {{/each}}
-
 </div>
 </template>
