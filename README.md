@@ -1,4 +1,4 @@
-# Polling
+# QuickPolls: A Meteor Project
 A simple example MeteorJS application.
 
 Following along the [tutorial on scotch.io][1] to continue learning Meteor.
